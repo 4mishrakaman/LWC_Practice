@@ -1,0 +1,9 @@
+<template>
+    <lightning-card title="Contacts">
+        <template lwc:if={contactsList}>
+            <template for:each={contactsList} for:item="contacts" >
+                <p key={contacts.Id}>{contacts.FirstName} {contacts.LastName}</p>
+            </template>
+        </template>
+    </lightning-card>
+</template>

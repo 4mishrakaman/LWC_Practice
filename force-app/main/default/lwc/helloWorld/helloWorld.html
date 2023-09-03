@@ -1,0 +1,11 @@
+<template>
+    <lightning-card class="slds-p-medium_around" variant="base" title="First Component" icon-name="utility:connected_apps">
+        <div class="slds-text-align_center">
+            <h1>{greeting}</h1>
+        </div>
+        <lightning-button-group>
+        <lightning-button variant="brand" icon-name="utility:enter" label="Click Me" title="clickMe" onclick={handleClickMe}></lightning-button>
+        <lightning-button variant="neutral" icon-name="utility:loop" label="Reset" title="Reset" onclick={handleReset}></lightning-button>
+    </lightning-button-group>
+    </lightning-card>
+</template>

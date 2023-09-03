@@ -1,0 +1,14 @@
+<template>
+    <lightning-card icon-name="standard:account" variant="base" class="slds-text-align_center slds-p-medium_around" title="Parent Component">
+      <p> Hello From Parent Component</p>
+      <p>{textMessage}</p>
+        <c-child-component></c-child-component>
+        <lightning-button 
+          variant="brand"
+          label="Update Child"
+          icon-name="utility:enter"
+          onclick={handleClick} 
+        ></lightning-button>
+        
+    </lightning-card>
+</template>

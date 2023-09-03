@@ -1,0 +1,21 @@
+<template>
+    <lightning-card icon-name="standard:lightning_component" variant="base" title=" Weather" >
+        <div class="slds-p-around_medium">
+            <lightning-input placeholder="Enter Valid City Name" label="City Name" onchange={handleOnChange}></lightning-input>
+            <lightning-button 
+              variant="brand"
+              icon-name="utility:search"
+              label="Search" 
+              onclick={handleClick} 
+            ></lightning-button>
+            <b>
+                <p>Region: {region} </p>
+                <p>Country: {country} </p>
+                <p>DateTime: {dateTime}</p>
+                <p><img src={imgUrl}/></p>
+                <p> Condition : {condition}</p>
+                <p> Temparature(C) : {temp} C</p>
+            </b>
+        </div>
+    </lightning-card>
+</template>
